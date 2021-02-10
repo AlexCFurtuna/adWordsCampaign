@@ -1,8 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const dateUtil = require("../adWordsCampaign/dateUtil");
-const inputHistory = require("../adWordsCampaign/inputHistoryDailyBudget");
-const outputCostHistory = require("../adWordsCampaign/outputCostGeneratedByInput");
 const adWords = require("../adWordsCampaign/adwordsCampaign");
 
 const PORT = 3000;
