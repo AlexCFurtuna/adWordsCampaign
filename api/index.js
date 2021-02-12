@@ -5,9 +5,9 @@ const PORT = 3000;
 
 const app = express();
 
-let inputBudgetHistoryJSON = JSON.stringify(adWords.inputBudgetHistory);
-let outputCostHistoryJSON = JSON.stringify(adWords.outputCostByDailyBudget);
-let costHistoryJSON = JSON.stringify(adWords.dailyBudgetHistoryArray);
+let inputBudgetHistoryJSON = adWords.inputBudgetHistory;
+let outputCostHistoryJSON = adWords.outputCostByDailyBudget;
+let costHistoryJSON = adWords.dailyBudgetHistoryArray;
 
 app.get("/input", (req, res) => {
   res.send(inputBudgetHistoryJSON);
